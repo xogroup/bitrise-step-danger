@@ -1,9 +1,14 @@
 #!/bin/bash
 set -ex
 
-bundle install
+gem install bundler
 
-## Running Danger
-bundle exec danger
+echo "Update danger"
+bundle update danger
+
+echo "Run danger"
+bundle install  
+bundle exec danger --fail-on-errors=false
+
 
 exit 0
