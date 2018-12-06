@@ -1,8 +1,6 @@
 #!/bin/bash
 set -ex
 
-gem install bundler
-
 echo "Update danger"
 bundle update danger
 

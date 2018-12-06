@@ -57,6 +57,8 @@ deps:
   apt_get:
   - name: git
   - name: wget
+  gem:
+  - name: bundler
 
 
 toolkit:
